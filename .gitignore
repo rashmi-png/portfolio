@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Local sandbox tooling (Chromium libraries & fonts pulled in for testing)
+.libs/
+.fonts/
+*.log
+vite.pid
+
+# Test artifacts
+artifacts/

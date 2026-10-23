@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rashmi — Resume</title>
+    <!--
+      Printable resume source. This page is rendered to
+      Rashmi_Resume.pdf (the file served by the "Download Resume" buttons).
+      Regenerate the PDF with:  npx playwright pdf public/resume/Rashmi_Resume.html public/resume/Rashmi_Resume.pdf
+    -->
+    <style>
+      @page {
+        size: A4;
+        margin: 13mm 15mm;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        font-size: 10pt;
+        line-height: 1.5;
+        color: #1c2434;
+        background: #fff;
+      }
+
+      header {
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 2.5px solid #4f46e5;
+        margin-bottom: 14px;
+      }
+
+      h1 {
+        font-size: 24pt;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        color: #0f172a;
+        text-transform: uppercase;
+      }
+
+      .headline {
+        margin-top: 3px;
+        font-size: 10.5pt;
+        font-weight: 600;
+        color: #4f46e5;
+      }
+
+      .contact {
+        margin-top: 7px;
+        font-size: 9pt;
+        color: #334155;
+      }
+
+      .contact span + span::before {
+        content: "•";
+        margin: 0 7px;
+        color: #94a3b8;
+      }
+
+      h2 {
+        margin: 14px 0 7px;
+        padding-bottom: 3px;
+        font-size: 11pt;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #0f172a;
+        border-bottom: 1px solid #cbd5e1;
+      }
+
+      p,
+      li {
+        font-size: 9.5pt;
+      }
+
+      .entry {
+        margin-bottom: 10px;
+      }
+
+      .entry:last-child {
+        margin-bottom: 0;
+      }
+
+      .entry-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+      }
+
+      .entry-title {
+        font-weight: 700;
+        color: #0f172a;
+      }
+
+      .entry-sub {
+        font-weight: 600;
+        color: #4f46e5;
+      }
+
+      .entry-period {
+        font-size: 8.5pt;
+        color: #475569;
+        white-space: nowrap;
+      }
+
+      ul {
+        margin: 4px 0 0 16px;
+        list-style: disc;
+      }
+
+      li {
+        margin-bottom: 2.5px;
+      }
+
+      .skills-row {
+        margin-bottom: 5px;
+      }
+
+      .skills-row b {
+        display: inline-block;
+        min-width: 108px;
+        font-weight: 700;
+        color: #0f172a;
+      }
+
+      .summary {
+        text-align: justify;
+      }
+
+      @media screen {
+        body {
+          max-width: 210mm;
+          margin: 24px auto;
+          padding: 24px;
+          box-shadow: 0 10px 40px rgba(2, 6, 23, 0.18);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Rashmi</h1>
+      <p class="headline">Computer Science (AI &amp; Machine Learning) | Data Analytics | Full Stack Development</p>
+      <p class="contact">
+        <span>Kundapura, Karnataka, India</span><span>+91 8296979850</span><span>rashmishriyann@gmail.com</span>
+      </p>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary">
+        Motivated Computer Science and Engineering student specialising in Artificial Intelligence, Machine Learning, and
+        Full Stack Development. Hands-on internship experience in data analytics, AI/ML workflows, and full-stack web
+        development. Proficient in Python, SQL, Excel, and modern web technologies, with project experience in customer
+        segmentation, ML problem framing, responsible AI documentation, and end-to-end application development. Seeking
+        an entry-level opportunity in data analytics, machine learning, or full-stack development.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">AJ Institute of Engineering and Technology</span>
+          <span class="entry-period">Expected 2028</span>
+        </div>
+        <p>Bachelor of Engineering, Computer Science and Engineering (AI &amp; ML)</p>
+      </div>
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">R N Shetty PU College</span>
+          <span class="entry-period">2023 – 2024</span>
+        </div>
+        <p>Pre-University Course (PUC)</p>
+      </div>
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">Government High School, Heskuthur</span>
+          <span class="entry-period">2021 – 2022</span>
+        </div>
+        <p>Secondary School Leaving Certificate (SSLC)</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Internship Experience</h2>
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">Full Stack Development Intern <span class="entry-sub">| Workora</span></span>
+          <span class="entry-period">Oct 2026 – Present</span>
+        </div>
+        <ul>
+          <li>Developed multiple full-stack features including a Live Query Filter System, JWT-based authentication, and Team Availability Tracker.</li>
+          <li>Built RESTful APIs, integrated databases, and created responsive UI components for production-ready applications.</li>
+          <li>Collaborated in an agile environment to deliver features, debug issues, and improve application performance.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">Data Analyst Intern <span class="entry-sub">| Thiranex</span></span>
+          <span class="entry-period">12 Aug 2026 – 11 Sep 2026</span>
+        </div>
+        <ul>
+          <li>Cleaned, explored, and analysed datasets to identify patterns, trends, and actionable insights.</li>
+          <li>Communicated findings clearly to stakeholders to support data-driven decision-making.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">Artificial Intelligence Intern <span class="entry-sub">| Rabtech Academy</span></span>
+          <span class="entry-period">5 Sep 2026 – 5 Oct 2026</span>
+        </div>
+        <ul>
+          <li>Developed practical understanding of AI and machine learning workflows through guided, hands-on projects.</li>
+          <li>Applied machine learning techniques to real-world problem statements and evaluated model performance.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="entry">
+        <p class="entry-title">Live Query Filter System</p>
+        <ul>
+          <li>Built a real-time query and filtering system that enables dynamic search and data retrieval across large datasets with low latency.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <p class="entry-title">User Authentication &amp; JWT</p>
+        <ul>
+          <li>Designed and implemented secure authentication using JWT, including login, token refresh, protected routes, and session management.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <p class="entry-title">Team Availability Tracker</p>
+        <ul>
+          <li>Developed a full-stack tracker to monitor team member availability, schedules, and resource allocation in real time.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <p class="entry-title">Customer Segmentation &amp; ML Problem Framing</p>
+        <ul>
+          <li>Segmented customers by behaviour for targeted decisions and framed business needs as well-defined ML problems with clear evaluation criteria.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <p class="skills-row"><b>Technical:</b> Python, SQL, Machine Learning, Excel, Data Analysis, HTML/CSS, JavaScript, Full Stack Development</p>
+      <p class="skills-row"><b>Core Competencies:</b> Customer Segmentation, ML Problem Framing, Responsible AI, Web Application Development</p>
+      <p class="skills-row"><b>Professional:</b> Communication, Teamwork, Leadership, Problem Solving</p>
+    </section>
+  </body>
+</html>
